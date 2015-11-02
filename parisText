@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "price": "40", 
+            "description": "Sofa bed in the heart of paris"
+        }, 
+        {
+            "price": "62", 
+            "description": "Chambre priv\u00e9e cosy Paris 15eme"
+        }, 
+        {
+            "price": "57", 
+            "description": "Cosy Bedroom Paris Belleville"
+        }, 
+        {
+            "price": "167", 
+            "description": "BEAUTIFUL APARTMENT PARIS BASTILLE"
+        }, 
+        {
+            "price": "91", 
+            "description": "Architect apt 1 bedroom Paris 11th"
+        }, 
+        {
+            "price": "29", 
+            "description": "Private Room in Paris 15\u00e8me"
+        }, 
+        {
+            "price": "170", 
+            "description": "Wonderful Loft in the MARAIS area"
+        }, 
+        {
+            "price": "68", 
+            "description": "Studio \u00e0 2 pas du Louvre !"
+        }, 
+        {
+            "price": "118", 
+            "description": "Appartement cosy - Quartier Bercy"
+        }, 
+        {
+            "price": "156", 
+            "description": "Charming studio center of Paris"
+        }, 
+        {
+            "price": "101", 
+            "description": "SWEET APARTMENT HEART OF MONTMARTRE"
+        }, 
+        {
+            "price": "203", 
+            "description": "GeorgeV apartment"
+        }, 
+        {
+            "price": "231", 
+            "description": "Madeleine Tronchet 8\u00e8me -Terrasse"
+        }, 
+        {
+            "price": "57", 
+            "description": "\u2605 UP IN THE AIR!! Central.Paris \u2764"
+        }, 
+        {
+            "price": "107", 
+            "description": "\u2665\u2665\u2665 CHARMING MARAIS HEART PARIS 4"
+        }, 
+        {
+            "price": "150", 
+            "description": "Chic IleStLouis-Island,Paris CENTER"
+        }, 
+        {
+            "price": "85", 
+            "description": "Chambre dans loft \u00e0 5mn de Bastille"
+        }, 
+        {
+            "price": "88", 
+            "description": "COSY FLAT NEAR THE EIFFEL TOWER"
+        }
+    ]
+}
