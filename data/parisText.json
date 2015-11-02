@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "price": "40", 
+            "description": "Sofa bed in the heart of paris"
+        }, 
+        {
+            "price": "39", 
+            "description": "NEW!!SHARED ROOM PARIS CITY CENTER!"
+        }, 
+        {
+            "price": "45", 
+            "description": "Spacious bedroom. Buttes Chaumont"
+        }, 
+        {
+            "price": "64", 
+            "description": "CHARMING STUDIO NEAR Notre Dame"
+        }, 
+        {
+            "price": "57", 
+            "description": "Cosy Bedroom Paris Belleville"
+        }, 
+        {
+            "price": "68", 
+            "description": "Studio \u00e0 2 pas du Louvre !"
+        }, 
+        {
+            "price": "215", 
+            "description": "Palais Royal:fantastic Loft,terrace"
+        }, 
+        {
+            "price": "62", 
+            "description": "Chambre priv\u00e9e cosy Paris 15eme"
+        }, 
+        {
+            "price": "113", 
+            "description": "Marais Central Paris Notre Dame !"
+        }, 
+        {
+            "price": "59", 
+            "description": "Romantic,sweet studio in Montmartre"
+        }, 
+        {
+            "price": "85", 
+            "description": "Cosy flat in the heart of Paris"
+        }, 
+        {
+            "price": "117", 
+            "description": "Charming French style modern Apt."
+        }, 
+        {
+            "price": "156", 
+            "description": "Charming studio center of Paris"
+        }, 
+        {
+            "price": "88", 
+            "description": "studio en plein coeur de paris"
+        }, 
+        {
+            "price": "56", 
+            "description": "Champs Elys\u00e9es!! Mini flat 8m\u00b2"
+        }, 
+        {
+            "price": "167", 
+            "description": "BEAUTIFUL APARTMENT PARIS BASTILLE"
+        }, 
+        {
+            "price": "66", 
+            "description": "Agr\u00e9able, Silencieux, Lumineux"
+        }, 
+        {
+            "price": "79", 
+            "description": "Cosy flat Republique-Canal S Martin"
+        }
+    ]
+}

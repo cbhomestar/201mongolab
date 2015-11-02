@@ -94,22 +94,22 @@
             </thead>
             <tbody>
               <tr ng-repeat="msg in messages">
-                <td class="span2" ng-bind="msg.name"></td>
+                <td class="span2" ng-bind="msg.price"></td>
                 <td class="span7" ng-bind="msg.text"></td>
               </tr>
             </tbody>
           </table>
           <div class="row controls">
-            <form ng-submit="send()">
-              <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name"></div>
-              <div class="input-append span7">
-                <input style="" type="text" class="span7" ng-model="text" placeholder="Enter your comment">
-              </div>
-              <div class="span7">
-                <input type="submit" class="span1 btn btn-primary" value="Send" ng-disabled="!text">
+            <!--<form ng-submit="send()">-->
+            <!--  <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name"></div>-->
+            <!--  <div class="input-append span7">-->
+            <!--    <input style="" type="text" class="span7" ng-model="text" placeholder="Enter your comment">-->
+            <!--  </div>-->
+            <!--  <div class="span7">-->
+            <!--    <input type="submit" class="span1 btn btn-primary" value="Send" ng-disabled="!text">-->
                 
-              </div>
-            </form>
+            <!--  </div>-->
+            <!--</form>-->
             <button ng-click="showComments()" class="span3 btn btn-primary" value="Show Comments">Show</button>
           </div>
         </div>

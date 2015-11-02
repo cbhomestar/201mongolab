@@ -20,14 +20,14 @@ mongoosedb.once("on", function() {
   console.log("on");
 
 });
-var commentSchema = new mongoose.Schema({
-    name: String, 
-    comment: String
+var priceSchema = new mongoose.Schema({
+    price: String, 
+    description: String
   });
-var Comments = mongoosedb.model('Com', commentSchema);
+var Prices = mongoosedb.model('Pri', priceSchema);
 
 var db = null;
-// var musicData = require('./data/musicdata.json');
+ var parisData = require('./data/parisText.json');
 
 
 //
@@ -57,7 +57,7 @@ io.on('connection', function (socket) {
     });
     
     socket.on('show', function() {
-      Comments.find({}, function(err, match) {
+      Prices.find({}, function(err, match) {
           
           if (err) return console.error(err);
           
@@ -66,7 +66,7 @@ io.on('connection', function (socket) {
           if (! match)
           {
               var data = {
-              name: "n/a",
+              price: "n/a",
               text: "no results"
             }
             socket.emit('show', data);
@@ -78,8 +78,8 @@ io.on('connection', function (socket) {
           for (var i in match)
           {
             data.push({
-            name:match[i].name,
-            text: match[i].comment
+            price:match[i].price,
+            text: match[i].description
           });
           }
           
@@ -97,17 +97,7 @@ io.on('connection', function (socket) {
         return;
         
         
-      var comment = new Comments({
-        name: msg.name,
-        comment: msg.text
-      });
       
-      comment.save(function(err, miss) {
-        if (err) return console.error(err);
-      });
-      
-      var KC = "Kelly Clarkson";
-      var song = "wah wah";
       // var blahblah = db.collection("testData").find( { Artist: KC }).each(function(err, doc) {
       //   console.log(doc);
       //   if (doc !== null)
@@ -192,23 +182,23 @@ io.on('connection', function (socket) {
       // });
       // console.log(blahblahArray);
 
-      socket.get('name', function (err, name) {
-        var data = {
-          name: name,
-          text: song
-        };
+      // socket.get('name', function (err, name) {
+      //   var data = {
+      //     name: name,
+      //     text: song
+      //   };
         
-        //var collec = db.collection("testData");
+      //   //var collec = db.collection("testData");
         
-        //var conn = mongo.db('process.env.IP');
-       // conn.collection("thishere").insert({x : 3});
+      //   //var conn = mongo.db('process.env.IP');
+      // // conn.collection("thishere").insert({x : 3});
        
        
        
 
-       // broadcast('message', data);
-       // messages.push(data);
-      });
+      // // broadcast('message', data);
+      // // messages.push(data);
+      // });
     });
 
     socket.on('identify', function (name) {
@@ -240,28 +230,26 @@ server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
   var addr = server.address();
   console.log("Chat server listening at", addr.address + ":" + addr.port);
   
-  Comments.remove({}, function(err) { 
+  Prices.remove({}, function(err) { 
    console.log('collection removed') 
     });
   
   // console.log(JSON.stringify((musicData)));
   
-  // for (var i in musicData)
-  // {
-  //   //console.log(musicData[i].Song);
+  for (var i in parisData.data)
+  {
+    //console.log(musicData[i].Song);
     
-  //   var song = new ProducerSong({
-  //         artist: musicData[i].Artist, 
-  //         songTitle: musicData[i].Song,
-  //         songTitleUpperCase: musicData[i].Song.toUpperCase(),
-  //         producer: musicData[i].Producer
-  //       });
+    var price = new Prices({
+          price: parisData.data[i].price, 
+          description: parisData.data[i].description
+        });
 
-  //     song.save(function(err, miss) {
-  //       if (err) return console.error(err);
-  //     });
+      price.save(function(err, miss) {
+        if (err) return console.error(err);
+      });
     
-  // }
+  }
   
   
   

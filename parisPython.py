@@ -23,5 +23,5 @@ for p in prices:
 
 
 
-with open("parisText", "w") as outfile:
+with open("parisText.json", "w") as outfile:
     json.dump({'data': data}, outfile, indent=4)
